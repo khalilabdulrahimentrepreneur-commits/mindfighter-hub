@@ -72,7 +72,14 @@
         }
     </style>
 </head>
-<body>
+<script>
+    // AntiEntryLog Protocol v1.0
+    document.addEventListener('contextmenu', event => {
+        event.preventDefault();
+        console.warn("ANTIENTRYLOG: Unauthorized Biometric Access Attempt Detected.");
+        alert("SECURITY ALERT: Mindfighter Core has logged this interaction. Biometric NFT signature required.");
+    });
+</script><body>
 
 <div class="biometric-overlay"></div>
 
