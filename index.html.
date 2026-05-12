@@ -3,114 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mindfighter Hub | Adventures of the Mind</title>
+    <title>Mindfighter Hub | HSA Core</title>
     <style>
-        :root {
-            --neon-blue: #00f2ff;
-            --deep-space: #0a0a12;
-            --manga-white: #f5f5f5;
-        }
-        body {
-            background-color: var(--deep-space);
-            color: var(--manga-white);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            overflow-x: hidden;
-        }
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(rgba(10, 10, 18, 0.8), rgba(10, 10, 18, 0.8)), 
-                        url('https://path-to-your-anime-art.jpg') center/cover;
-            text-align: center;
-            border-bottom: 2px solid var(--neon-blue);
-        }
-        .biometric-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(0, 242, 255, 0.05) 1px, rgba(0, 242, 255, 0.05) 2px);
-            pointer-events: none;
-        }
-        .btn-access {
-            background: transparent;
-            border: 2px solid var(--neon-blue);
-            color: var(--neon-blue);
-            padding: 15px 30px;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: 0.3s;
-            box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
-        }
-        .btn-access:hover {
-            background: var(--neon-blue);
-            color: var(--deep-space);
-            box-shadow: 0 0 30px var(--neon-blue);
-        }
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 50px;
-            background: #11111d;
-        }
-        .card {
-            border: 1px solid #333;
-            padding: 20px;
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--neon-blue);
-        }
+        :root { --neon-blue: #00f2ff; --deep-space: #0a0a12; --manga-white: #f5f5f5; }
+        body { background-color: var(--deep-space); color: var(--manga-white); font-family: 'Courier New', Courier, monospace; margin: 0; overflow-x: hidden; }
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border-bottom: 2px solid var(--neon-blue); position: relative; }
+        .biometric-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(0, 242, 255, 0.05) 1px, rgba(0, 242, 255, 0.05) 2px); pointer-events: none; }
+        .btn-access { background: transparent; border: 2px solid var(--neon-blue); color: var(--neon-blue); padding: 15px 40px; font-size: 1.2rem; text-transform: uppercase; cursor: pointer; transition: 0.3s; box-shadow: 0 0 15px rgba(0, 242, 255, 0.3); text-decoration: none; }
+        .btn-access:hover { background: var(--neon-blue); color: var(--deep-space); box-shadow: 0 0 30px var(--neon-blue); }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 50px; background: #0e0e1a; }
+        .card { border: 1px solid #222; padding: 25px; border-radius: 4px; transition: 0.3s; }
+        .card:hover { border-color: var(--neon-blue); background: rgba(0, 242, 255, 0.02); }
     </style>
 </head>
-<script>
-    // AntiEntryLog Protocol v1.0
-    document.addEventListener('contextmenu', event => {
-        event.preventDefault();
-        console.warn("ANTIENTRYLOG: Unauthorized Biometric Access Attempt Detected.");
-        alert("SECURITY ALERT: Mindfighter Core has logged this interaction. Biometric NFT signature required.");
-    });
-</script><body>
+<body>
 
 <div class="biometric-overlay"></div>
 
 <section class="hero">
-    <h1>ADVENTURES OF THE MIND</h1>
-    <p>THE THREADS OF HSA | MINDFIGHTER CORE V.1.0</p>
-    <div style="margin-top: 20px;">
-        <button class="btn-access" onclick="alert('Initializing Biometric Scan...')">Initialize Entry</button>https://gemini.google.com/share/bf2f85858e1a 
+    <h1 style="letter-spacing: 5px;">MINDFIGHTER HUB</h1>
+    <p style="color: var(--neon-blue);">PROJECT: ADVENTURES OF THE MIND | HSA THREADS</p>
+    <div style="margin-top: 30px;">
+        <a href="https://gemini.google.com/share/bf2f85858e1a" class="btn-access">Initialize Biometric Entry</a>
     </div>
 </section>
 
 <section class="feature-grid">
     <div class="card">
-        <h3>Biometric NFT Security</h3>
-        <p>Your access is tied to a unique biological signature, ensuring secure ownership of the Mindfighter Beginnings ecosystem.</p>
+        <h3>Biometric NFT Framework</h3>
+        <p>Encryption active. User identity linked via facial and iris recognition protocols.</p>
     </div>
     <div class="card">
-        <h3>Kaleidoscope HUD</h3>
-        <p>Experience the world through the Codex lens with geometric line overlays and technical data visualization.</p>
+        <h3>The Mangia Shell</h3>
+        <p>Interface overlaying anime-style aesthetics with real-time data visualization.</p>
     </div>
     <div class="card">
-        <h3>Manga Integration</h3>
-        <p>Custom anime-style watermarks and character overlays bridge the gap between digital literature and visual media.</p>
+        <h3>HSA Storybook Core</h3>
+        <p>Direct access to the Threads of HSA narrative and geometric kaleidoscope perspective.</p>
     </div>
 </section>
 
-<footer>
-    <p style="text-align: center; padding: 20px; font-size: 0.8rem; color: #555;">
-        OFFICIAL PRODUCT OF MINDFIGHTER HUB | POWERED BY B.A.N.G MEDIA
-    </p>
-</footer>
+<script>
+    // ANTIENTRYLOG PROTOCOL
+    document.addEventListener('contextmenu', event => {
+        event.preventDefault();
+        alert("ANTIENTRYLOG: Unauthorized Biometric Access Attempt Detected. Security protocol engaged.");
+    });
+</script>
 
 </body>
 </html>
