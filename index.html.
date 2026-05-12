@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfighter Hub | Adventures of the Mind</title>
+    <style>
+        :root {
+            --neon-blue: #00f2ff;
+            --deep-space: #0a0a12;
+            --manga-white: #f5f5f5;
+        }
+        body {
+            background-color: var(--deep-space);
+            color: var(--manga-white);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(10, 10, 18, 0.8), rgba(10, 10, 18, 0.8)), 
+                        url('https://path-to-your-anime-art.jpg') center/cover;
+            text-align: center;
+            border-bottom: 2px solid var(--neon-blue);
+        }
+        .biometric-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(0, 242, 255, 0.05) 1px, rgba(0, 242, 255, 0.05) 2px);
+            pointer-events: none;
+        }
+        .btn-access {
+            background: transparent;
+            border: 2px solid var(--neon-blue);
+            color: var(--neon-blue);
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+        }
+        .btn-access:hover {
+            background: var(--neon-blue);
+            color: var(--deep-space);
+            box-shadow: 0 0 30px var(--neon-blue);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px;
+            background: #11111d;
+        }
+        .card {
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--neon-blue);
+        }
+    </style>
+</head>
+<body>
+
+<div class="biometric-overlay"></div>
+
+<section class="hero">
+    <h1>ADVENTURES OF THE MIND</h1>
+    <p>THE THREADS OF HSA | MINDFIGHTER CORE V.1.0</p>
+    <div style="margin-top: 20px;">
+        <button class="btn-access" onclick="alert('Initializing Biometric Scan...')">Initialize Entry</button>
+    </div>
+</section>
+
+<section class="feature-grid">
+    <div class="card">
+        <h3>Biometric NFT Security</h3>
+        <p>Your access is tied to a unique biological signature, ensuring secure ownership of the Mindfighter Beginnings ecosystem.</p>
+    </div>
+    <div class="card">
+        <h3>Kaleidoscope HUD</h3>
+        <p>Experience the world through the Codex lens with geometric line overlays and technical data visualization.</p>
+    </div>
+    <div class="card">
+        <h3>Manga Integration</h3>
+        <p>Custom anime-style watermarks and character overlays bridge the gap between digital literature and visual media.</p>
+    </div>
+</section>
+
+<footer>
+    <p style="text-align: center; padding: 20px; font-size: 0.8rem; color: #555;">
+        OFFICIAL PRODUCT OF MINDFIGHTER HUB | POWERED BY B.A.N.G MEDIA
+    </p>
+</footer>
+
+</body>
+</html>
