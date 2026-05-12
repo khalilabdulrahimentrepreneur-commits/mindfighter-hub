@@ -87,7 +87,7 @@
     <h1>ADVENTURES OF THE MIND</h1>
     <p>THE THREADS OF HSA | MINDFIGHTER CORE V.1.0</p>
     <div style="margin-top: 20px;">
-        <button class="btn-access" onclick="alert('Initializing Biometric Scan...')">Initialize Entry</button>
+        <button class="btn-access" onclick="alert('Initializing Biometric Scan...')">Initialize Entry</button>https://gemini.google.com/share/bf2f85858e1a 
     </div>
 </section>
 
